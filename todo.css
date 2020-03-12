@@ -1,0 +1,50 @@
+*{
+    box-sizing: border-box;
+}
+.header{
+    background-color: red;
+     padding:30px 40px;
+}
+#head{
+    text-align: center;
+    color: goldenrod;
+    font-size: 55px;
+
+}
+#list{
+    text-align: center;
+    font-size: 40px;
+    color: cornsilk;
+    cursor: pointer;
+}
+body{
+    background-image:url(https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__340.jpg);
+background-repeat: no-repeat;
+background-size: contain;
+background-size:100%100%
+}
+p{
+    color:white
+}
+input{
+    margin: 0;
+    border: none;
+    border-radius: 0;
+    width: 40%;
+    padding: 10px;
+    float: left;
+    font-size: 16px;
+}
+.add{
+    padding: 10px;
+    width: 15%;
+    background: #d9d9d9;
+    color: #555;
+    float: left;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 0;
+  }
+

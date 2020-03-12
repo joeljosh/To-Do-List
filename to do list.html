@@ -1,0 +1,53 @@
+<html>
+
+
+<head>
+<title>
+To Do List
+</title>
+<link rel="stylesheet" href="todo.css">
+
+<script>
+function add(){var newitem=document.createElement("div")
+               newitem.innerHTML=document.getElementById("box").value
+               document.getElementById("list").appendChild(newitem)
+newitem.onclick=removeitem
+saveList();
+}
+
+function removeitem(){document.getElementById("list").removeChild(this)
+saveList();}
+
+function saveList(){
+localStorage.storedList=document.getElementById("list").innerHTML
+}
+
+function loadList(){
+document.getElementById("list").innerHTML=localStorage.storedList
+for(var i=0;i<list.children.length;i++){
+list.children[i].onclick=removeitem}
+}
+
+</script>
+
+</head>
+
+
+<body>
+<div class="header">
+    
+    <input type="text" id="box" placeholder="type here" >
+<span onclick="add()" class="add">click here</span>
+<p>(click to on item to remove just after adding)</p>
+</div>
+<h1 id="head">List</h1>
+<div id="list"></div>
+
+<script>
+if(localStorage.storedList)
+{loadList();}
+</script>
+</body>
+
+
+</html>
